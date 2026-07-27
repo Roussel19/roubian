@@ -1,0 +1,184 @@
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+}
+
+
+* {
+    font: "JetBrainsMono Nerd Font 11";
+
+    bg: #080608;
+    bg-alt: #160812;
+
+    fg: #d8c5cc;
+
+    wine: #8f123f;
+    wine-light: #c91d59;
+
+    selected-fg: #ffffff;
+}
+
+
+
+window {
+
+    width: 420px;
+
+    background-color: #080608;
+
+    border: 2px;
+
+    border-color: #8f123f;
+
+    border-radius: 16px;
+}
+
+
+
+mainbox {
+
+    background-color: #080608;
+
+    padding: 14px;
+
+}
+
+
+
+inputbar {
+
+    children: [ prompt, entry ];
+
+    background-color: #160812;
+
+    border-radius: 10px;
+
+    padding: 8px 12px;
+
+}
+
+
+
+prompt {
+
+    text-color: #c91d59;
+
+}
+
+
+
+entry {
+
+    text-color: #d8c5cc;
+
+}
+
+
+
+message {
+
+    background-color: #080608;
+
+    text-color: #d8c5cc;
+
+}
+
+
+
+listview {
+
+    background-color: #080608;
+
+    columns: 1;
+
+    lines: 7;
+
+    spacing: 5px;
+
+    scrollbar: false;
+
+}
+
+
+
+element {
+
+    background-color: transparent;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+}
+
+
+
+element normal {
+
+    background-color: transparent;
+
+}
+
+
+
+element normal.normal {
+
+    background-color: transparent;
+
+}
+
+
+
+element-text {
+
+    text-color: #d8c5cc;
+
+}
+
+
+
+element normal.element-text {
+
+    text-color: #d8c5cc;
+
+}
+
+
+
+element alternate.element-text {
+
+    text-color: #d8c5cc;
+
+}
+
+
+
+element selected {
+
+    background-color: #8f123f;
+
+}
+
+
+
+element selected.normal {
+
+    background-color: #8f123f;
+
+}
+
+
+
+element selected.element-text {
+
+    text-color: #ffffff;
+
+}
+
+
+
+element-icon {
+
+    size: 32px;
+
+}

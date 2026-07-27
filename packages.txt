@@ -1,0 +1,10 @@
+i3-wm
+kitty
+polybar
+rofi
+picom
+zsh
+feh
+playerctl
+brightnessctl
+

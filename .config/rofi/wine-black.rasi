@@ -1,0 +1,98 @@
+* {
+    /* Paleta de Colores */
+    bg0:     #0a0a0a; /* Negro fondo principal */
+    bg1:     #161616; /* Negro elementos */
+    bg2:     #222222; /* Negro selección */
+    
+    fg0:     #e0e0e0; /* Texto principal */
+    fg1:     #888888; /* Texto secundario */
+    
+    accent:  #722F37; /* Rojo Vino (Wine) */
+    accent-alt: #993d48; /* Rojo vino más claro para hover */
+    urgent:  #b22222; /* Rojo alerta */
+
+    background-color: transparent;
+    text-color:       @fg0;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg0;
+    text-color: @fg0;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 8px;
+    width: 600px;
+    padding: 20px;
+}
+
+mainbox {
+    spacing: 15px;
+    background-color: transparent;
+    children: [inputbar, message, listview];
+}
+
+inputbar {
+    background-color: @bg1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: @bg2;
+    spacing: 10px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @accent;
+    background-color: transparent;
+    font: "JetBrains Mono Bold 11";
+}
+
+entry {
+    placeholder: "Buscar aplicación...";
+    placeholder-color: @fg1;
+    text-color: @fg0;
+    background-color: transparent;
+}
+
+listview {
+    background-color: transparent;
+    margin: 0px;
+    spacing: 5px;
+    lines: 8;
+    columns: 1;
+}
+
+element {
+    background-color: transparent;
+    text-color: @fg0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    spacing: 15px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg0;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color: #ffffff;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg0;
+}
+
+element-icon {
+    size: 24px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}

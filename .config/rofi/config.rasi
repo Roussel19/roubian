@@ -1,0 +1,14 @@
+configuration {
+    modi: "drun,run,window";
+    font: "JetBrains Mono Medium 11";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    display-drun: "🔍 Apps";
+    display-run: "⚡ Run";
+    display-window: "🪟 Window";
+    drun-display-format: "{name}";
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+@theme "wine-black"
