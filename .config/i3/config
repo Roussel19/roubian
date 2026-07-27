@@ -207,7 +207,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # Iniciar compositor Picom en segundo plano al arrancar i3
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf &
 # Establecer fondo de pantalla automáticamente con feh al arrancar
-exec_always --no-startup-id feh --bg-scale ~/Imágenes/wallpaper1.png
+exec_always --no-startup-id feh --bg-scale "$HOME/.local/share/wallpapers/wallpaper1.png"
 
 exec --no-startup-id nm-applet
 # Establecer el borde predeterminado como delgado sin barra de título (pixel 2)
