@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# --- PROMPT PERSONALIZADO: rou@debian (Wine & Black) ---
+# --- PROMPT PERSONALIZADO:
 setopt PROMPT_SUBST
 
 COLOR_USER="%F{160}"
