@@ -1,103 +1,146 @@
 # 🐧 Roubian v0.19
 
-![Roubian](wallpapers/logoroubian.png)
+<p align="center">
+  <img src="wallpapers/logoroubian.png" width="300">
+</p>
 
-**Roubian** es mi configuración personal basada en **Debian 13 (Trixie)** con **i3wm**, creada con la idea de tener un entorno de trabajo cómodo, ligero, productivo y visualmente atractivo.
+<h3 align="center">
+Debian 13 + i3wm personal environment focused on programming, productivity and a beautiful workflow.
+</h3>
 
-No es una distribución oficial ni un sistema independiente, sino un conjunto de configuraciones, scripts, temas y ajustes personales para transformar una instalación de Debian en un entorno enfocado en **programación, productividad y uso diario**.
+---
+
+## 📖 ¿Qué es Roubian?
+
+**Roubian** es mi configuración personal basada en **Debian 13 (Trixie)** utilizando **i3wm** como gestor de ventanas.
+
+Este proyecto nace de la idea de crear un entorno Linux que sea:
+
+- ⚡ Rápido y ligero.
+- 🧑‍💻 Cómodo para programar.
+- 🚀 Enfocado en productividad.
+- 🎨 Visualmente hermoso y agradable de usar.
+- 🖥️ Minimalista pero funcional.
+
+Roubian no es una distribución Linux independiente, sino un conjunto de configuraciones, scripts, temas y ajustes personales para transformar una instalación de Debian en un entorno de trabajo completo.
+
+Lo desarrollé principalmente para mi propio uso, como una forma de tener mi configuración respaldada, organizada y versionada.
+
+Sin embargo, si alguien encuentra útil esta configuración, es completamente libre de usarla, modificarla y adaptarla a sus propias necesidades.
 
 ---
 
 # ✨ Filosofía
 
-La idea detrás de Roubian es simple:
+La idea detrás de Roubian es crear un entorno donde trabajar sea cómodo.
 
-> Un entorno de trabajo debe ser rápido, bonito y cómodo de usar.
+Un sistema operativo no solamente debe funcionar, también debe sentirse bien al utilizarlo.
 
-Busco combinar:
+Roubian busca combinar:
 
-* ⚡ Rendimiento y bajo consumo de recursos.
-* 🖥️ Una interfaz limpia y minimalista.
-* 🎨 Un diseño moderno y agradable visualmente.
-* 🧑‍💻 Un entorno preparado para programar.
-* 🚀 Herramientas que mejoren la productividad.
+- Minimalismo.
+- Buen rendimiento.
+- Personalización.
+- Productividad.
+- Estética moderna.
 
-Roubian nace como una configuración hecha para mi propio uso, adaptada a mis gustos y necesidades. Lo subo a GitHub principalmente para tener un respaldo, llevar un historial de cambios y compartir el proyecto con otras personas.
-
-Si alguien quiere usarlo, modificarlo o tomar partes de la configuración, es totalmente libre de hacerlo.
+Cada configuración ha sido ajustada con el objetivo de crear un flujo de trabajo agradable para programación, estudio y uso diario.
 
 ---
 
 # 🖥️ Sistema base
 
-* **Distribución:** Debian 13 (Trixie)
-* **Window Manager:** i3wm
-* **Terminal:** Kitty
-* **Shell:** Zsh
-* **Barra de estado:** Polybar
-* **Launcher:** Rofi
-* **Compositor:** Picom
+| Componente | Tecnología |
+|---|---|
+| Distribución | Debian 13 (Trixie) |
+| Window Manager | i3wm |
+| Terminal | Kitty |
+| Shell | Zsh |
+| Barra de estado | Polybar |
+| Launcher | Rofi |
+| Compositor | Picom |
+| Fuente principal | JetBrains Mono Nerd Font |
 
 ---
 
-# 🛠️ Incluye
+# 🛠️ Componentes incluidos
 
-## i3wm
+## 🪟 i3wm
 
 Configuración personalizada del gestor de ventanas:
 
-* Atajos personalizados.
-* Organización de escritorios.
-* Integración con Polybar.
-* Inicio automático de aplicaciones.
-
-## Kitty
-
-Terminal configurada para programación:
-
-* JetBrains Mono Nerd Font.
-* Tema oscuro.
-* Ajustes visuales personalizados.
-
-## Polybar
-
-Barra de estado con:
-
-* Workspaces.
-* Información del sistema.
-* Reproductor multimedia.
-* Scripts personalizados.
-
-## Rofi
-
-Launcher personalizado con temas:
-
-* Menú de aplicaciones.
-* Estilos oscuros.
-* Diseños personalizados.
-
-## Picom
-
-Efectos visuales:
-
-* Transparencias.
-* Sombras.
-* Mejor experiencia visual.
-
-## Zsh
-
-Configuración personalizada de shell:
-
-* Alias.
-* Mejor experiencia en terminal.
-* Flujo de trabajo más cómodo.
+- Atajos personalizados.
+- Organización de escritorios.
+- Inicio automático de aplicaciones.
+- Integración con Polybar.
 
 ---
 
-# 📂 Estructura
+## 🖥️ Kitty
+
+Terminal configurada para desarrollo:
+
+- Tema oscuro.
+- Transparencia.
+- JetBrains Mono Nerd Font.
+- Ajustes visuales personalizados.
+
+---
+
+## 🚀 Polybar
+
+Barra de estado personalizada:
+
+Incluye:
+
+- Workspaces.
+- Información del sistema.
+- Reproductor multimedia.
+- Scripts personalizados.
+
+---
+
+## 🔍 Rofi
+
+Launcher personalizado con temas propios:
+
+Incluye:
+
+- Menú de aplicaciones.
+- Estilos oscuros.
+- Temas personalizados Wine/Black.
+
+---
+
+## ✨ Picom
+
+Configuración visual:
+
+- Transparencias.
+- Sombras.
+- Efectos de ventana.
+- Mejor integración visual.
+
+---
+
+## 🐚 Zsh
+
+Configuración de shell:
+
+Incluye:
+
+- Oh My Zsh.
+- zsh-autosuggestions.
+- zsh-syntax-highlighting.
+- Prompt personalizado Roubian.
+
+---
+
+# 📂 Estructura del proyecto
 
 ```
 roubian/
+│
 ├── .config/
 │   ├── i3/
 │   ├── kitty/
@@ -106,55 +149,71 @@ roubian/
 │   └── rofi/
 │
 ├── wallpapers/
+│   ├── logoroubian.png
+│   └── wallpaper1.png
+│
 ├── fonts.md
 ├── packages.txt
 ├── install.sh
+├── LICENSE
 ├── README.md
 └── .zshrc
 ```
 
 ---
 
-# 🚀 Instalación
+# 🚀 Instalación automática
 
-Clona el repositorio:
+Roubian incluye un instalador que prepara el entorno automáticamente.
+
+## 1. Clonar repositorio
 
 ```bash
 git clone https://github.com/Roussel19/roubian.git
 ```
 
-Entra a la carpeta:
+Entrar al directorio:
 
 ```bash
 cd roubian
 ```
 
-Dale permisos al instalador:
+---
+
+## 2. Ejecutar instalador
+
+Dar permisos:
 
 ```bash
 chmod +x install.sh
 ```
 
-Ejecuta:
+Ejecutar:
 
 ```bash
 ./install.sh
 ```
 
-Después reinicia i3:
+---
 
-```
-Mod + Shift + R
-```
+El instalador realiza:
+
+✅ Instalación de paquetes necesarios.  
+✅ Instalación de JetBrains Mono Nerd Font.  
+✅ Instalación de Oh My Zsh.  
+✅ Instalación de plugins de Zsh.  
+✅ Copia de configuraciones.  
+✅ Instalación de wallpapers.  
+✅ Configuración de permisos para scripts.  
 
 ---
 
 # 🔤 Fuentes
 
-Roubian utiliza principalmente:
+Roubian utiliza:
 
-* JetBrains Mono Nerd Font
-* Symbols incluidos en Nerd Fonts
+- JetBrains Mono Nerd Font.
+- Iconos Nerd Font.
 
 Más información:
 
@@ -164,24 +223,32 @@ fonts.md
 
 ---
 
-# 📦 Paquetes recomendados
+# 📦 Dependencias
 
-Los paquetes necesarios están documentados en:
+Las dependencias utilizadas están documentadas en:
 
 ```
 packages.txt
 ```
 
-Incluye herramientas utilizadas por la configuración como:
+Incluye herramientas como:
 
-* i3wm
-* Kitty
-* Polybar
-* Rofi
-* Picom
-* Zsh
-* Playerctl
-* Brightnessctl
+```
+i3-wm
+kitty
+polybar
+rofi
+picom
+zsh
+playerctl
+brightnessctl
+```
+
+---
+
+# 📸 Capturas
+
+Próximamente se añadirán capturas del escritorio completo, terminal y launcher.
 
 ---
 
@@ -189,34 +256,36 @@ Incluye herramientas utilizadas por la configuración como:
 
 Roubian seguirá evolucionando con el tiempo.
 
-Iré agregando mejoras, nuevos temas, ajustes y herramientas conforme vaya personalizando mi entorno.
+Este proyecto irá recibiendo:
 
-Algunas futuras mejoras pueden incluir:
+- Nuevos temas.
+- Mejoras visuales.
+- Nuevos scripts.
+- Automatización.
+- Ajustes de productividad.
 
-* Más automatización.
-* Mejor instalador.
-* Nuevos temas.
-* Más scripts.
-* Mejor documentación.
+La versión actual es:
 
----
-
-# 📸 Capturas
-
-*(Próximamente)*
+```
+Roubian v0.19
+```
 
 ---
 
 # 📜 Licencia
 
-Roubian es un proyecto personal, pero está disponible para que otras personas puedan usarlo, modificarlo y adaptarlo a sus propias necesidades.
+Roubian es un proyecto personal, pero está disponible para que otras personas puedan utilizarlo y modificarlo libremente.
 
-Si algo de esta configuración te sirve, úsalo libremente.
+Puedes tomar partes de la configuración, adaptarlas o crear tu propia versión.
 
 ---
 
 # 👤 Autor
 
-Creado por **Roussel19**.
+Creado por:
 
-Proyecto personal desarrollado para crear un entorno Linux cómodo, productivo y visualmente hermoso.
+**Roussel19**
+
+Proyecto personal enfocado en crear un entorno Linux cómodo, productivo y visualmente hermoso.
+
+⭐ Si esta configuración te sirve, considera dejar una estrella al repositorio.
